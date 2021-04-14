@@ -15,6 +15,6 @@ class MainActivity : BaseActivity() {
     }
 
     private fun initViews() {
-        replaceFragment(HomeFragment())
+        replaceFragment(HomeFragment(), addBackStack = false)
     }
 }
