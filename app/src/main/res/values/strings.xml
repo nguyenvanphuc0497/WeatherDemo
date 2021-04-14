@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WeatherDemo</string>
+
+    <string name="item_home_tv_title">Title: </string>
+    <string name="item_home_tv_type">Type: </string>
+    <string name="item_home_tv_lat_long">LatLong: </string>
+    <string name="item_home_tv_woe_id">Where On Earth ID: </string>
+
+    <string name="fragment_home_hint_search_view">Enter Text To Search</string>
+</resources>

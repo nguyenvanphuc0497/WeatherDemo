@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='@string/item_home_tv_title'
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp21"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitleContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/sp21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text='London London London London London London London ' />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='@string/item_home_tv_type'
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp21"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvTypeContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/sp21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvType"
+        app:layout_constraintTop_toTopOf="@id/tvType"
+        tools:text='City City City City City City City City City ' />
+
+    <TextView
+        android:id="@+id/tvLatLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='@string/item_home_tv_lat_long'
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp21"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvType" />
+
+    <TextView
+        android:id="@+id/tvLatLongContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/sp21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvLatLong"
+        app:layout_constraintTop_toTopOf="@id/tvLatLong"
+        tools:text='51.506321,-0.12714 51.506321,-0.12714 51.506321,-0.12714 51.506321,-0.12714 51.506321,-0.12714 ' />
+
+    <TextView
+        android:id="@+id/tvWoEID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='@string/item_home_tv_woe_id'
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp21"
+        app:layout_constraintEnd_toStartOf="@id/tvWoEIDContent"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvLatLong" />
+
+    <TextView
+        android:id="@+id/tvWoEIDContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/sp21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvWoEID"
+        app:layout_constraintTop_toTopOf="@id/tvWoEID"
+        tools:text='1234555 1234555 1234555 1234555 1234555 ' />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
